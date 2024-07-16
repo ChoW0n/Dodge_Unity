@@ -6,10 +6,18 @@ public class HelloCode : MonoBehaviour
 {
     void Start()
     {
-        for (int i = 0; i < 10; i++)
+        int[] students = new int[5];
+
+        students[0] = 100;
+        students[1] = 90;
+        students[2] = 80;
+        students[3] = 70;
+        students[4] = 60;
+
+        for (int i = 0; i < students.Length; i++)
         {
-            //i는 0부터 시작하여 9가 될 때까지 i를 1씩 증가시키며, 총 10회 반복 실행 
-            Debug.Log(i + " 번째 순번 입니다. ");
+            Debug.Log(i.ToString() + " 번 학생의 점수 : " + students[i]);
         }
+
     }
 }
